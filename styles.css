@@ -810,6 +810,7 @@ a {
     .header-cta {
         padding: 10px;
         border-radius: 50%;
+        clip-path: none;
     }
 
     .menu-toggle {
@@ -826,12 +827,12 @@ a {
     }
 
     .hero-logo {
-        width: 320px;
-        margin-bottom: 24px;
+        width: 280px;
+        margin-bottom: 0;
     }
 
     .hero-content {
-        padding: 40px 0;
+        padding: 0;
     }
 
     .hero-ctas {
@@ -915,7 +916,7 @@ a {
     }
 
     .hero-logo {
-        width: 280px;
+        width: 240px;
     }
 
     .service-card {
@@ -924,5 +925,20 @@ a {
 
     .feature-number {
         font-size: 3rem;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .footer-sep {
+        display: none;
+    }
+
+    .contact-item a,
+    .contact-item span {
+        font-size: 0.9rem;
+        word-break: break-word;
     }
 }
