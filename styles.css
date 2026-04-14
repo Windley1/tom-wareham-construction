@@ -224,7 +224,7 @@ a {
     width: 500px;
     max-width: 90%;
     height: auto;
-    margin: 0 auto 8px;
+    margin: 0 auto 0;
 }
 
 .hero h1 {
@@ -235,13 +235,13 @@ a {
     line-height: 1.05;
     text-transform: uppercase;
     letter-spacing: 0.02em;
-    margin-bottom: 6px;
+    margin-bottom: 2px;
 }
 
 .hero-sub {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     color: var(--text-light);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     line-height: 1.5;
 }
 
