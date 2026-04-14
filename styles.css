@@ -166,12 +166,12 @@ a {
 /* ---------- Hero ---------- */
 .hero {
     position: relative;
-    min-height: 90vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     background: var(--charcoal);
-    overflow: hidden;
-    padding-top: 72px;
+    overflow: visible;
+    padding: 120px 0 140px;
 }
 
 /* Diagonal concrete texture effect */
@@ -217,7 +217,7 @@ a {
     z-index: 3;
     width: 100%;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 0;
 }
 
 .hero-logo {
@@ -250,6 +250,8 @@ a {
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    z-index: 4;
 }
 
 /* ---------- Buttons ---------- */
@@ -815,8 +817,8 @@ a {
     }
 
     .hero {
-        min-height: 75vh;
-        padding-top: 64px;
+        min-height: auto;
+        padding: 100px 0 120px;
     }
 
     .hero::after {
