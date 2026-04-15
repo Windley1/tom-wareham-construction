@@ -590,27 +590,12 @@ a {
     margin-bottom: 0;
 }
 
-.photo-placeholder {
-    background: var(--charcoal);
-    border-radius: 2px;
+.about-img {
+    width: 100%;
     aspect-ratio: 4 / 5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-    gap: 16px;
-}
-
-.photo-placeholder svg {
-    width: 80px;
-    height: 80px;
-    opacity: 0.2;
-}
-
-.photo-placeholder span {
-    font-size: 0.85rem;
-    opacity: 0.3;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 2px;
 }
 
 /* ---------- Contact ---------- */
