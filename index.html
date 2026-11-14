@@ -1026,6 +1026,67 @@ a {
     color: #a8a39b;
 }
 
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-light);
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.footer-social:hover,
+.footer-social:focus-visible {
+    color: var(--white);
+    background: var(--orange);
+    border-color: var(--orange);
+}
+
+.footer-social svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-legal-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-left: 0.5rem;
+}
+
+.footer-legal-link:hover {
+    color: var(--orange);
+}
+
+.form-privacy-note {
+    font-size: 0.8125rem;
+    color: var(--text-light);
+    margin-top: 0.875rem;
+    text-align: center;
+}
+
+.form-privacy-note a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+
 /* ============================================
    PORTFOLIO PAGE
    ============================================ */
@@ -1626,7 +1687,8 @@ details[open] .faq-question::after { content: '−'; }
             "name": "Tom Wareham"
         },
         "sameAs": [
-            "https://www.google.com/maps?kgmid=/g/11nb_377yk"
+            "https://www.google.com/maps?kgmid=/g/11nb_377yk",
+            "https://www.facebook.com/profile.php?id=61595262416024"
         ]
     }
     </script>
@@ -2032,6 +2094,7 @@ details[open] .faq-question::after { content: '−'; }
                         <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">Send Enquiry</button>
+                    <p class="form-privacy-note">We only use your details to reply to your enquiry. See our <a href="privacy.html">privacy policy</a>.</p>
                 </form>
                 <div class="contact-details">
                     <h3>Contact Details</h3>
@@ -2042,6 +2105,10 @@ details[open] .faq-question::after { content: '−'; }
                     <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
                         <a href="mailto:Thomaswareham93@gmail.com">Thomaswareham93@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        <a href="https://www.facebook.com/profile.php?id=61595262416024" target="_blank" rel="noopener">Follow us on Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
                     </div>
                     <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -2079,7 +2146,10 @@ details[open] .faq-question::after { content: '−'; }
                 <span class="footer-sep">|</span>
                 <a href="mailto:Thomaswareham93@gmail.com">Thomaswareham93@gmail.com</a>
             </div>
-            <p class="footer-copy">&copy; 2026 Tom Wareham Construction. All rights reserved.</p>
+            <a href="https://www.facebook.com/profile.php?id=61595262416024" class="footer-social" target="_blank" rel="noopener" aria-label="Tom Wareham Construction on Facebook (opens in a new tab)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <p class="footer-copy">&copy; 2026 Tom Wareham Construction. All rights reserved. <a href="privacy.html" class="footer-legal-link">Privacy Policy</a></p>
         </div>
     </footer>
 

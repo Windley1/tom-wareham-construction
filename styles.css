@@ -977,6 +977,165 @@ a {
     color: #a8a39b;
 }
 
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-light);
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.footer-social:hover,
+.footer-social:focus-visible {
+    color: var(--white);
+    background: var(--orange);
+    border-color: var(--orange);
+}
+
+.footer-social svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-legal-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-left: 0.5rem;
+}
+
+.footer-legal-link:hover {
+    color: var(--orange);
+}
+/* ============================================
+   PRIVACY / LEGAL PAGE
+   ============================================ */
+.legal {
+    background: var(--warm-bg);
+    padding: 3.5rem 0 4.5rem;
+}
+
+.legal-inner {
+    max-width: 760px;
+}
+
+.legal-updated {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.legal h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 4vw, 1.875rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--charcoal);
+    margin: 2.5rem 0 0.875rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--concrete);
+    scroll-margin-top: 90px;
+}
+
+.legal h2:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.legal p,
+.legal li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.legal p + p,
+.legal p + ul,
+.legal ul + p {
+    margin-top: 0.875rem;
+}
+
+.legal ul {
+    padding-left: 1.25rem;
+}
+
+.legal li + li {
+    margin-top: 0.4rem;
+}
+
+.legal li::marker {
+    color: var(--orange);
+}
+
+.legal a {
+    color: var(--orange);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    overflow-wrap: anywhere;
+}
+
+.legal-table-wrap {
+    overflow-x: auto;
+    margin: 1.25rem 0;
+    border: 1px solid var(--concrete);
+    border-radius: 6px;
+    background: var(--white);
+}
+
+.legal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+    min-width: 480px;
+}
+
+.legal-table th,
+.legal-table td {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--concrete);
+    vertical-align: top;
+}
+
+.legal-table th {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.875rem;
+    background: var(--charcoal-dark);
+    color: var(--white);
+}
+
+.legal-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.legal code {
+    font-size: 0.875em;
+    background: var(--orange-light);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+}
+
+.form-privacy-note {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    margin-top: 0.875rem;
+    text-align: center;
+}
+
+.form-privacy-note a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 /* ============================================
    PORTFOLIO PAGE
    ============================================ */
